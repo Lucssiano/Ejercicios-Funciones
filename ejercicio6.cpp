@@ -5,7 +5,7 @@ representa a sobre b.  */
 
 using namespace std;
 
-void porcentaje(int, int);
+int porcentaje(int, int);
 
 int main()
 {
@@ -14,13 +14,13 @@ int main()
   cin >> num1;
   cout << "Ingrese otro numero ";
   cin >> num2;
-  porcentaje(num1, num2);
+  cout << "El porcentaje que presenta " << num1 << " sobre " << num2 << " es del " << porcentaje(num1, num2) << "%";
   return 0;
 }
 
-void porcentaje(int a, int b)
+int porcentaje(int a, int b)
 {
   float porcentaje;
   porcentaje = (float)(a * 100) / b;
-  cout << "El porcentaje que presenta " << a << " sobre " << b << " es del " << porcentaje << "%";
+  return porcentaje;
 }
