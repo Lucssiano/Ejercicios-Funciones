@@ -10,7 +10,7 @@ Utilizar función del ejercicio 7
 b) Cuántos nacimientos hubo en el mes de octubre de todos los años.
 c) Cuántos nacimientos hubo antes del 9 de julio de 1990.
 d) Cuántos nacimientos de mujeres hubo en la primavera del 1982.
-e) Sexo de la persona más vieja (solo existe una).
+e) Sexo de la persona más vieja (solo existe una). // Hay una funcion donde calculo la persona mas vieja
 Desarrollar y utilizar las funciones que considere necesarias */
 
 #include <iostream>

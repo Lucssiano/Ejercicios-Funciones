@@ -8,7 +8,32 @@ con el siguiente algoritmo:
 
 using namespace std;
 
+int maximoComunDivisor(int, int);
+
 int main()
 {
+  int A, B;
+  cout << "Ingrese dos numeros enteros: ";
+  cin >> A >> B;
+  cout << maximoComunDivisor(A, B);
   return 0;
+}
+
+int maximoComunDivisor(int A, int B)
+{
+  int resto, mcd;
+
+  resto = A % B;
+
+  if (resto == 0)
+  {
+    mcd = B;
+    return mcd;
+  }
+  else
+  {
+    A = B;
+    B = resto;
+    maximoComunDivisor(A, B);
+  }
 }

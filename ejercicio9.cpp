@@ -5,17 +5,26 @@
 
 using namespace std;
 
-int fechaFormateada(int);
+void fechaFormateada(int);
 
 int main()
 {
   int fecha;
   cout << "Ingrese una fecha en formato AAAAMMDD ";
   cin >> fecha;
-  cout << fechaFormateada(fecha);
+  fechaFormateada(fecha);
   return 0;
 }
 
-int fechaFormateada(int fecha)
+void fechaFormateada(int fecha)
 {
+  int año, mes, dia;
+
+  año = fecha / 10000;
+  mes = (fecha - (año * 10000)) / 100;
+  dia = (fecha - (año * 10000)) - mes * 100;
+
+  cout << "El ano es: " << año << endl;
+  cout << "El mes es: " << mes << endl;
+  cout << "El dia es: " << dia << endl;
 }

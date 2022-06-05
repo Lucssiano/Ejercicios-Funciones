@@ -10,7 +10,6 @@ int sonMultiplos(int, int);
 int main()
 {
   int num1, num2;
-  bool condicion = true;
   cout << "Ingrese un numero ";
   cin >> num1;
   cout << "Ingrese otro numero ";
