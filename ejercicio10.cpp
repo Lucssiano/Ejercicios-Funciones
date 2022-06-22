@@ -8,21 +8,21 @@ considere también si cambió el día */
 
 using namespace std;
 
-// int sumaDeHoras(int, int);
+int sumaDeHoras(int, int);
 
 int main()
 {
-  int hora1, hora2;
+  int hora, tiempo;
   cout << "Ingresar una hora en formato HHMMSS: ";
-  cin >> hora1;
-  cout << "Ingresar otra hora en formato HHMMSS: ";
-  cin >> hora2;
-  // cout << sumaDeHoras(hora1, hora2);
+  cin >> hora;
+  cout << "Ingresar un tiempo en formato HHMMSS: ";
+  cin >> tiempo;
+  cout << sumaDeHoras(hora, tiempo);
   return 0;
 }
 
-// int sumaDeHoras(int h1, int h2)
-// {
-//   int sumaHrs;
-//   return
-// }
+int sumaDeHoras(int h1, int h2)
+{
+  int sumaHrs = h1 + h2;
+  return sumaHrs;
+}
